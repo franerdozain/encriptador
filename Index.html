@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale= 1">
+        <title>(Des)-encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6003c61394.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1 class="titulo">(Des)-encriptador</h1>          
+        <section class="main">
+            <div><label id="ingresar-txt">Ingrese su mensaje:</label></div>
+            <div class="espacio-encriptado">                            
+                <textarea cols="40" rows="12" class="cuadro-texto" name="inputMensaje" id="inputMensaje" placeholder="Solo letras minúsculas, sin tildes ni caracteres especiales"></textarea>
+                <div class="botones-encriptar-desencriptar">
+                    <button class="btn-encriptar" id="botonEncriptar">Encriptar</button>
+                    <button class="btn-desencriptar">Desencriptar</button>
+                </div> 
+            </div>
+            <div><label id="mensaje-encriptado">Mensaje encriptado:</label></div>
+            <div class="espacio-desencriptado">                
+                <textarea cols="40" rows="12" readonly class="cuadro-texto" name="outputMsj" id="outputMensaje"></textarea>
+            <div class="boton-copiar">                
+                <button class="btn-copiar">Copiar</button>    
+            </div> 
+            </div>
+        </section>             
+            <footer class="footer-controlesSonido"> 
+                <div class="boton-whatsapp"><button class="btn-wa"><a id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></button></div>               
+                <button id="onSonido"><i class="fa-solid fa-volume-high"></i></button>
+                <button id="offSonido"><i class="fa-solid fa-volume-off"></i></button> 
+                <span id="marca">&#169; Fran Erdozain</span>
+            </footer>                                    
+        <script src="encriptador.js"></script>          
+    </body>
+</html>

@@ -1,0 +1,259 @@
+*{
+  font-family: 'Zilla Slab', serif;
+}
+
+body{
+    display: grid;
+    height: 100vh;
+    background-image: url(signo-pregunta.jpg);
+    background-size:auto;    
+  }
+  
+body{
+  background-size: 500%;
+  animation: movimiento 100s infinite linear alternate;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: center left;
+  }to{
+    background-position: top right;
+  }
+}
+
+.titulo{
+  width: fit-content;
+  justify-self: center;
+  padding: 0.5em 0;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.815);
+  display:block;
+  text-shadow: 15px 10px 10px black;
+}
+
+.main{
+  width: auto;
+  text-align: center;
+  margin: 5em 1em 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#ingresar-txt{
+  vertical-align: top;
+  font-size: 25px;
+  color: rgb(255, 255, 255, 0.815);
+  text-shadow: 10px 10px 5px black;
+}
+
+.espacio-encriptado{
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.cuadro-texto:focus, .cuadro-texto{
+  resize: none;
+  height: auto;
+  width: auto;
+  position: relative;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  background: linear-gradient(rgba(255, 255, 255, 0.938), #494848);
+  border: 1px solid rgba(23, 24, 23, 0.9);
+  border-radius: 10px;
+  outline: 0;
+  box-shadow: 0px 15px 30px black;
+}
+
+.botones-encriptar-desencriptar{
+  width: auto;
+  text-align: center;
+}
+
+.boton-encriptar{
+  width: auto;
+  text-align: center;
+  padding: 1em;
+}
+
+.btn-encriptar, .btn-desencriptar, .btn-copiar{
+  text-size-adjust: auto;
+  width: auto;
+  margin: 0.7em;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  border: 1px dotted black;
+  border-radius: 5px;
+  transition: 0.4s all;
+  cursor: pointer;
+  box-shadow: 0px 15px 30px black;
+  
+}
+
+#mensaje-encriptado{
+  vertical-align: top;
+  font-size: 25px;
+  color: rgb(255, 255, 255, 0.815);
+  text-shadow: 10px 10px 5px black;
+}
+
+.espacio-desencriptado{
+  position: relative;
+  display: inline-block;
+  width: auto;
+}
+
+.btn-copiar:hover, .btn-desencriptar:hover, .btn-encriptar:hover{
+  background: black;
+  transform: scale(1.2);
+  box-shadow: 0 40px 40px black;
+}
+
+.footer-controlesSonido{
+  font-size: 20px;
+  color: rgb(255, 255, 255, 0.815);
+  text-shadow: 2px 10px 5px black;
+  display: grid;
+  justify-items: center;
+  bottom: 2%;
+  right: 50%;
+}
+
+.btn-wa{
+  display: none;
+}
+
+#onSonido{
+  color: rgba(255, 255, 255, 0.815);
+  position: relative;
+  font-size: 20px;
+  background: transparent;
+  border-radius: 20px;
+  border: none;
+  text-shadow: 2px 9px 10px black;
+  cursor: pointer;
+}
+
+#offSonido{
+  position: relative;
+  color: rgba(255, 255, 255, 0.815);
+  visibility: hidden;
+  font-size: 20px;
+  background: transparent;
+  border-radius: 20px;
+  border: none;
+  text-shadow: 2px 9px 10px black;
+  bottom: 100%;
+  cursor: pointer;
+}
+
+#marca{
+  font-size: 18px;
+}
+
+@media screen and (max-width:900px) {
+  body, .titulo, .boton-encriptar, .btn-encriptar, .main, .espacio-encriptado, #ingresar-txt, .espacio-desencriptado, #mensaje-encriptado, .botones-encriptar-desencriptar, .btn-desencriptar, .btn-copiar{
+    display: grid;
+    width: auto;
+  }
+  
+  .main{
+    margin: 1em 0 0 0;
+  }
+
+  .titulo{
+    font-size: 40px;
+  }
+
+  .boton-encriptar, .botones-encriptar-desencriptar {
+      justify-content: center;
+  }
+
+  .btn-encriptar{
+    justify-self: center;
+  }
+
+  .btn-desencriptar{
+    margin-bottom: 2em;
+  }
+  
+  .btn-copiar{
+    margin-bottom: 0.7em;
+  }
+
+  .btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover{
+    transform: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  .btn-encriptar, .btn-desencriptar, .btn-copiar{
+    transition: none;
+    background-color: #000000ee;
+  }
+
+  .btn-encriptar:active, .btn-desencriptar:active, .btn-copiar:active{
+    transform: none;
+    box-shadow: none;
+    color: rgb(255, 255, 255, 0.815);
+    background-color: transparent;
+  }
+
+  #ingresar-txt, #mensaje-encriptado{
+    padding-bottom: 0.3em;
+    font-size: 20px;
+  }
+
+  .boton-copiar{
+    justify-self: center;
+  }
+
+  .btn-wa{
+    display: flex;
+    background: none;
+    border-radius: 20px;
+    border: none;
+    font-size: 23px;
+    margin: 0.5em auto 0.7em;
+    padding: 2.2px 4px 0px 5px;
+  }
+
+  a{
+    color: #25D366;
+  }
+
+  a:active{
+    color: rgb(255, 255, 255, 0.815);
+  }
+
+  #onSonido:hover, #offSonido:hover{
+    transform: none;
+    color: white;
+  } 
+
+  #onSonido{
+    position: relative;
+  }
+  
+  body{
+    background-size: 800%;
+    animation: movimiento 60s infinite linear alternate;
+  }
+  
+  @keyframes movimiento {
+    from {
+      background-position: center left;
+    }to{
+      background-position: top right;
+    }
+    
+  }
+
+}
+
