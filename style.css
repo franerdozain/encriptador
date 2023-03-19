@@ -124,10 +124,34 @@ body{
   bottom: 2%;
   right: 50%;
 }
-
+/* 
 .btn-wa{
   display: none;
 }
+
+ */
+
+ .btn-wa{
+  display: flex;
+  background: none;
+  border-radius: 20px;
+  border: none;
+  font-size: 23px;
+  margin: 0.5em auto 0.7em;
+  padding: 2.2px 4px 0px 5px;
+}
+
+a{
+  color: #25D366;
+}
+
+a:active{
+  color: rgb(255, 255, 255, 0.815);
+}
+
+
+
+
 
 #onSonido{
   color: rgba(255, 255, 255, 0.815);
