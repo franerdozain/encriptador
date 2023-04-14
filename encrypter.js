@@ -48,7 +48,7 @@ btnEncriptar.addEventListener('click',function(event){
     txtEncriptado.value = textoEncriptado;
     txtIntroducido.value = "";
     let encodedTxt = btoa(txtEncriptado.value);
-    whatsappLink.setAttribute("href", `whatsapp://send?text=This is your secret message: ${txtEncriptado.value}. Find out what it says here: https://desencriptador.netlify.app/?mje=${encodedTxt}`);
+    whatsappLink.setAttribute("href", `whatsapp://send?text=This is your secret message: ${txtEncriptado.value}. Find out what it says here: https://encrypterdecryptor.netlify.app/?mje=${encodedTxt}`);
 });
 
 btnDesencriptar.addEventListener('click',function(event){

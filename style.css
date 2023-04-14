@@ -97,8 +97,6 @@ body{
 
 .cuadro-texto:focus, .cuadro-texto{
   resize: none;
-  /* height: auto;
-  width: auto; */
   position: relative;
   color: black;
   font-weight: bold;
@@ -168,13 +166,12 @@ body{
 }
 
  .btn-wa{
-  display: flex;
   background: none;
   border-radius: 20px;
   border: none;
   font-size: 23px;
-  margin: 0.5em auto 0.7em;
-  padding: 2.2px 4px 0px 5px;
+  padding-left: 0.65em;
+  padding-bottom: 0.2em;
 }
 
 #whatsapp{
@@ -187,7 +184,8 @@ body{
 
 #onSonido{
   color: rgba(255, 255, 255, 0.815);
-  position: relative;
+  position: absolute;
+  padding-bottom: 0.3em;
   font-size: 20px;
   background: transparent;
   border-radius: 20px;
@@ -198,6 +196,7 @@ body{
 
 #offSonido{
   position: relative;
+  padding-bottom: 0.3em;
   color: rgba(255, 255, 255, 0.815);
   visibility: hidden;
   font-size: 20px;
